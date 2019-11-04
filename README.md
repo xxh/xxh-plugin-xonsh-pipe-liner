@@ -52,5 +52,13 @@ $ cat /etc/passwd | head -n 3 | pl "line.split(':')" | grep nologin | pl "':'.jo
 /usr/sbin/nologin:/bin:bin:2:2:x:bin
 ```
 
+### Operations chaining in lambda (Python 3.8)
+```
+$ ls -1 / | head -n3 | pl "[s:='b', line.replace(s, s.upper()+')')][-1]"
+B)in
+B)oot
+dev
+```
+
 ## Thanks
 * @laloch for https://github.com/xonsh/xonsh/issues/3366
