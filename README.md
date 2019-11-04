@@ -51,3 +51,6 @@ $ cat /etc/passwd | head -n 3 | pl "line.split(':')" | grep nologin | pl "':'.jo
 /usr/sbin/nologin:/usr/sbin:daemon:1:1:x:daemon
 /usr/sbin/nologin:/bin:bin:2:2:x:bin
 ```
+
+## Thanks
+* @laloch for https://github.com/xonsh/xonsh/issues/3366
