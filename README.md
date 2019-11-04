@@ -47,8 +47,7 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 
 ### Use arrays
 ```
-$ cat /etc/passwd | head -n 3 | pl "line.split(':')" | pl "':'.join(eval(line)[::-1])"
-/bin/bash:/root:root:0:0:x:root
+$ cat /etc/passwd | head -n 3 | pl "line.split(':')" | grep nologin | pl "':'.join(eval(line)[::-1])"
 /usr/sbin/nologin:/usr/sbin:daemon:1:1:x:daemon
 /usr/sbin/nologin:/bin:bin:2:2:x:bin
 ```
