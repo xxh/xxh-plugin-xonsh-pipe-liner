@@ -23,7 +23,7 @@ boot is here
 dev is here
 ```
 
-### Easy splitting
+### Splitting
 ```
 $ cat /etc/passwd | head -n 3
 root:x:0:0:root:/root:/bin/bash
@@ -36,7 +36,7 @@ $ cat /etc/passwd | head -n 3 | pl "line.split(':')[6]"
 /usr/sbin/nologin
 ```
 
-### Use imports
+### Imports
 ```
 $ import re
 $ cat /etc/passwd | head -n 3 | pl "re.sub('/bin/bash', '/usr/bin/xonsh', line)"
@@ -45,7 +45,7 @@ daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 ```
 
-### Use arrays
+### Arrays
 ```
 $ cat /etc/passwd | head -n 3 | pl "line.split(':')" | grep nologin | pl "':'.join(eval(line)[::-1])"
 /usr/sbin/nologin:/usr/sbin:daemon:1:1:x:daemon
@@ -58,6 +58,21 @@ $ ls -1 / | head -n3 | pl "[s:='b', line.replace(s, s.upper()+')')][-1]"
 B)in
 B)oot
 dev
+```
+
+### Line number
+```
+$ ls -1 / | head | pl "'*'*len(line) if num%3 == 0 else line"
+***
+boot
+dev
+***
+home
+initrd.img
+**************
+lib
+lib32
+*****
 ```
 
 ## Thanks
