@@ -1,3 +1,4 @@
+import os
 def _pl(args, stdin, stdout):
     fn = eval('lambda line, num:'+args[0])
     num = 0
