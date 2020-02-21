@@ -4,6 +4,8 @@ Pipe liner plugin adds `pl` alias and allows modify strings from pipe. Install:
 ```
 cd ~/.xxh/plugins
 git clone --depth 1 https://github.com/xonssh/xxh-plugin-pipe-liner
+# connect once with updating host
+xxh yourhost +if
 ```
 
 ## Usecases
