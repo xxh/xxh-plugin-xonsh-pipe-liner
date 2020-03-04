@@ -4,7 +4,7 @@ def _pl(args, stdin, stdout):
     num = 0
     for line in stdin.readlines():
         res = fn(line.rstrip(os.linesep), num)
-	num += 1
+        num += 1
         print(res, file=stdout, flush=True)
 			
 aliases['pl'] = _pl
