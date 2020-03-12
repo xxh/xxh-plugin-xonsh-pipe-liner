@@ -1,6 +1,12 @@
-# xxh-plugin-pipe-liner
-
 Pipe liner plugin adds `pl` alias and allows modify strings from pipe. Install:
+
+## Install
+From xxh repo:
+```
+xxhp i xxh-plugin-xonsh-pipe-liner
+xxh yourhost +s xonsh +if
+```
+From any repo:
 ```
 cd ~/.xxh/xxh/plugins
 git clone --depth 1 https://github.com/xxh/xxh-plugin-xonsh-pipe-liner
