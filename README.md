@@ -4,13 +4,13 @@ Pipe liner plugin adds `pl` alias and allows modify strings from pipe. Install:
 From xxh repo:
 ```
 xxh +I xxh-plugin-xonsh-pipe-liner
-xxh yourhost +s xonsh +if
 ```
 From any repo:
 ```
-cd ~/.xxh/xxh/plugins
-git clone --depth 1 https://github.com/xxh/xxh-plugin-xonsh-pipe-liner
-# connect once with updating host
+xxh +I xxh-plugin-xonsh-pipe-liner+git+https://github.com/xxh/xxh-plugin-xonsh-pipe-liner
+```
+Connect:
+```
 xxh yourhost +s xonsh +if
 ```
 
