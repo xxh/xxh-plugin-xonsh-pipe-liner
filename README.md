@@ -11,7 +11,7 @@ xxh +I xxh-plugin-xonsh-pipe-liner+git+https://github.com/xxh/xxh-plugin-xonsh-p
 ```
 Connect:
 ```
-xxh yourhost +s xonsh-appimage +if
+xxh yourhost +s xonsh +if
 ```
 
 ## Usecases
