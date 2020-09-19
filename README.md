@@ -1,4 +1,6 @@
-Pipe liner plugin adds `pl` alias and allows modify strings from pipe. Install:
+Pipe liner plugin adds `pl` alias and allows modify strings from pipe.
+
+Note! This is the old version of xonsh [xontrib-pipeliner](https://github.com/anki-code/xontrib-pipeliner).
 
 ## Install
 From xxh repo:
